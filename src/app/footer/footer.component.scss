@@ -1,0 +1,305 @@
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+
+    >.section-footer-1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background: #e6e6e6;
+        padding: 25px 0;
+        color: #212529;
+
+        >.content-footer-1 {
+            width: 100%;
+            height: 100%;
+            max-width: 1200px;
+
+            h1 {
+                font-size: 32px ;
+                text-align: center;
+                margin-bottom: 50px;
+                font-family: 'DB Heavent Med Cond';
+            }
+
+            >.verify-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+
+                >.id-card {
+                    display: flex;
+                    flex-direction: column;
+
+                    >.txt-verify-id-card {
+                        font-size: 24px;
+                        font-weight: bold;
+                        text-align: center;
+                        margin-bottom: 5px;
+                        p{
+                            margin-bottom: unset;
+                            font-family: 'DB Heavent Bd Cond';
+                        }
+                    }
+
+                    >.icon-verify-id-card {
+                        position: relative;
+                        z-index: 0;
+                        width: 210px;
+                        height: 210px;
+                        border-radius: 50%;
+                        background: linear-gradient(180deg, #D7D3D3 0%, #C7C7C7 100%);
+                        border: 4.14327px solid #90BE2E;
+
+                        >.icon-id-card {
+                            position: absolute;
+                            top: 50px;
+                            left: 0;
+                            right: 0;
+                            z-index: 1;
+                            margin: auto;
+                        }
+                    }
+                }
+
+                >.icon-plus {
+                    // font-family: DB Heavent;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 110px;
+                    color: #649631;
+                    margin: 0 10px;
+                }
+
+                >.selfie-with-id-card {
+
+                    >.txt-selfie-with-id-card {
+                        font-size: 24px;
+                        font-weight: bold;
+                        text-align: center;
+                        margin-bottom: 5px;
+
+                        p{
+                            margin-bottom: unset;
+                            font-family: 'DB Heavent Bd Cond';
+                        }
+                    }
+
+                    >.icon-selfie-with-id-card {
+                        z-index: 0;
+                        width: 210px;
+                        height: 210px;
+                        border-radius: 50%;
+                        background: linear-gradient(180deg, #D7D3D3 0%, #C7C7C7 100%);
+                        border: 4.14327px solid #90BE2E;
+                        position: relative;
+
+                        >.icon-selfie {
+                            position: absolute;
+                            top: -10px;
+                            left: 0;
+                            right: 0;
+                            z-index: 1;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+
+            h2 {
+                font-family: 'DB Heavent Med Cond';
+                text-align: center;
+                font-size: 32px;
+            }
+        }
+    }
+
+    >.section-footer-2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: #90BE2E;
+        padding: 60px 0 21px 0;
+        color: #212529;
+
+        >.content-footer-2 {
+            width: 100%;
+            max-width: 1200px;
+            height: 100%;
+            // background-color: white;
+
+            >.data-contact-ais {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                line-height: 40px;
+
+                >.subsidiary-name {
+
+                    // display: flex;
+                    h1 {
+                        font-size: 48px;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                >.address {
+                    p {
+                        font-family: 'DB Heavent Med Cond';
+                        text-align: center;
+                        font-size: 32px;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                >.tel {
+                    font-family: 'DB Heavent Med Cond';
+                    text-align: center;
+                    font-size: 32px;
+                    margin-bottom: 16px
+                }
+            }
+
+            >.icon-img-contact {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                >.txt-discription {
+                    font-size: 48px;
+                    margin: 20px 0 30px 0;
+
+                    p {
+                        font-size: 32px;
+                        text-align: center;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                >.icon-contact {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 14px;
+
+                    >.list-icon {
+                        padding: 0 10px;
+
+                        a{
+                            img{
+                                width: 65px;
+                                height: 65px;
+                            }
+                        }
+                    }
+                }
+
+                >.img-contact {
+                    width: 544px;
+                    height: 320px;
+                    background: #7c7b7b;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    >.section-footer-3 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: #484947;
+        padding: 28px 0;
+
+        >.content-footer-3 {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+            height: calc(100% - 20px);
+
+            >.text-footer-1 {
+                margin-bottom: unset;
+                text-align: center;
+                color: #90BE2E;
+                font-size: 24px;
+            }
+
+            >.text-footer-2 {
+                margin-bottom: unset;
+                text-align: center;
+                color: #808080;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width : 475px) {
+
+    .content-footer-1 {
+        h1 {
+            padding: 0 30px;
+        }
+    }
+
+    .img-contact {
+        width: 100% !important;
+    }
+
+    .data-contact-ais {
+        padding: 0 10px;
+    }
+
+    .txt-discription {
+        padding: 0 10px;
+    }
+
+    .verify-content {
+        flex-direction: column;
+    }
+
+    h2 {
+        padding: 0 58px;
+    }
+
+    .content-footer-3{
+        line-height: 30px;
+        padding: 25px 10px 80px 10px !important;
+    }
+}
+
+@media only screen and(max-width : 375px){
+    .content-footer-2{
+
+        >.data-contact-ais{
+            padding: 0 36px !important;
+        }
+
+        >.icon-img-contact{
+            >.txt-discription{
+                padding: 0 36px !important;
+            }
+        }
+    }
+}

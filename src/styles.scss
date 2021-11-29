@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("assets/font/font.css");
+@import './app/variable.scss';
+@import '~swiper/swiper-bundle.min.css';
+@import '~swiper/swiper-bundle';
+
+body {
+    // width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'DB Heavent Cond';
+    margin: unset;
+    // overflow-y: hidden;
+}
+
+h1{
+    font-family: 'DB Heavent Bd Cond';
+    font-size: 64px;
+    
+}
+
+h2{
+    font-family: 'DB Heavent Bd Cond';
+    font-size: 48px;
+}
+h3{
+    font-size: 48px;
+}
+
+h4{
+    // font-family: 'DB Heavent Bd Cond';
+    font-size: 36px;
+}
+.slick-slider {
+    min-width: 242px;
+    width: 100%;
+    margin: auto;
+    background-color: transparent;
+}
+
+body .slick-prev,
+body .slick-next {
+    height: 45px;
+    width: 40px;
+    // font-size: 20px;
+    // background: grey !important;
+    z-index: 100;
+}
+
+//------------------------ Swiper Design -------------------------//
+.swiper-pagination-bullet {
+    background: #E5E0DF;
+    width: 10.54px !important;
+    height: 10.54px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5D045 !important;
+    width: 36.80px !important;
+    height: 9.49px !important;
+    border-radius: 11px !important;
+    transition: 0.5s all ease !important;
+}
+
+.swiper-scrollbar {
+    display: none !important;
+}
+
+.swiper-button-next {
+    color: #C2E439;
+}
+
+.swiper-button-prev{
+    color: #C2E439;
+}

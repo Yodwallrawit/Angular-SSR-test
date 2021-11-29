@@ -1,0 +1,77 @@
+<div class="footer">
+    <section class="section-footer-1">
+        <div class="content-footer-1">
+            <h1>กรุณาส่งเอกสารยืนยันตัวตน เพื่อทำรายการออนไลน์ ดังนี้</h1>
+            <div class="verify-content">
+                <div class="id-card">
+                    <div class="txt-verify-id-card">
+                        <p>รูปถ่ายบัตรประชาชน</p>
+                    </div>
+                    <div class="icon-verify-id-card">
+                        <img class="icon-id-card" src="assets/img/icon/ID-Card1 1.png" alt="">
+                    </div>
+                </div>
+                <div class="icon-plus">
+                    +
+                </div>
+                <div class="selfie-with-id-card">
+                    <div class="txt-selfie-with-id-card">
+                        <p>ถ่ายภาพเซลฟี่บัตรประชาชน</p>
+                    </div>
+                    <div class="icon-selfie-with-id-card">
+                        <img class="icon-selfie" src="assets/img/icon/Selfie-with-ID-Card1 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <h2>ส่งเอกสารเรียบร้อยแล้ว รอทำรายการให้ตามลำดับ</h2>
+        </div>
+    </section >
+    <section class="section-footer-2">
+        <div class="content-footer-2">
+            <div class="data-contact-ais">
+                <div class="subsidiary-name">
+                    <h1>{{detailShop.name}}</h1>
+                </div>
+                <div class="address">
+                    <p>ที่อยู่ {{detailShop.address}}</p>
+                </div>
+                <div class="tel">
+                    <p>เบอร์ติดต่อ {{detailShop.tel}}</p>
+                </div>
+            </div>
+            <div class="icon-img-contact">
+                <div class="txt-discription">
+                    <p>ติดตามข้อมูลข่าวสาร โปรโมชั่นและกิจกรรมต่างๆ ของเอไอเอสทางช่องทางต่อไปนี้</p>
+                </div>
+                <div class="icon-contact">
+                    <div class="list-icon" target="_blank">
+                        <a [href]="detailShop.other">
+                            <img src="assets/img/icon/footer_web 1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="list-icon">
+                        <a [href]="detailShop.facebook" target="_blank">
+                            <img src="assets/img/icon/footer_facebook 1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="list-icon">
+                        <a [href]="baseURLLine + detailShop.line" target="_blank">
+                            <img src="assets/img/icon/footer_line 1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="img-contact">
+                    <img [src]="detailShop?.image" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-footer-3">
+        <div class="content-footer-3">
+            <p class="text-footer-1">AIS Shop Online : © 2020 ADVANCED INFO SERVICE PLC. ALL RIGHTS RESERVED. </p>
+            <p class="text-footer-2">AIS Shop Online : รับการรับรองจาก AIS</p>
+        </div>
+    </section>
+</div>
+

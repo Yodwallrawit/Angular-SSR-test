@@ -1,0 +1,40 @@
+.wrap-swiper {
+    width: 100vw;
+    height: 484px;
+
+    >.swiper-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        >.swiper-wrapper {
+            display: flex;
+            width: 100%;
+
+            >.swiper-slide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // width: 80%;
+                height: 100%;
+                // width: 249px !important;
+                // height: 341px;
+                img {
+                    width: 249px;
+                    height: 341px;
+                    // object-fit: contain;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and(max-width :475px){
+    .swiper-button-prev{
+        display: none !important;
+    }
+    .swiper-button-next{
+        display: none !important;
+    }
+}

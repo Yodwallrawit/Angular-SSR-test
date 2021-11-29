@@ -1,0 +1,5 @@
+export * from "../shared/card-pagckage/card-pagckage.component"
+export * from "../shared/card-content/card-content.component"
+export * from "../shared/multi-img-swiper/multi-img-swiper.component"
+export * from "../shared/swiper-top-page/swiper-top-page.component"
+export * from "../shared/table-package/table-package.component"

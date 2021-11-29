@@ -1,0 +1,41 @@
+.wrap-error-page {
+    width: 100vw;
+    height: 100vh;
+
+    >.error-page {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        >.logo {
+            width: 160px;
+            height: 90px;
+            margin-right: 40px;
+            margin-bottom: 45px;
+        }
+
+        p {
+            font-size: 26px;
+            margin-bottom: unset;
+        }
+    }
+}
+
+@media only screen and(max-width : 375px) {
+    .logo {
+        width: 120px !important;
+        height: 67px !important;
+        margin-right: 30px !important;
+    }
+
+    p {
+        font-size: 26px;
+        margin-bottom: unset;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

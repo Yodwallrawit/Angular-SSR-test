@@ -1,0 +1,37 @@
+<div class="wrap-swiper" *ngIf="swiperImg[0]?.length > 0">
+    <div class="swiper-container" [swiper]="config">
+        
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" *ngFor="let slide of swiperImg[0]">
+            <img src="{{slide.img}}" alt="">
+          </div>
+        </div>
+      
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-pagination"></div>
+      
+        <div class="swiper-button-prev">
+          
+        </div>
+        <div class="swiper-button-next"></div>
+      </div>
+</div>
+
+<div class="wrap-swiper-preview-mobile" *ngIf="swiperImg[1]?.length > 0">
+  <div class="wrap-edit-hero-banner">
+  </div>
+  <div class="swiper-container" [swiper]="config">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let item of swiperImg[1]">
+        <img src="{{item.img}}" alt="">
+      </div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+
+

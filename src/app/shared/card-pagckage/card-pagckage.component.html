@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="top-card" *ngIf="cardPackage && cardPackage.img">
+        <img src="{{cardPackage.img}}" alt="">
+    </div>
+    <div class="bottom-card">
+        <div class="discription-package">
+            <div class="head-discript">
+                <h4>Package name</h4>
+            </div>
+            <div class="price-package">
+                <div class="price">
+                    <h1 class="price-text">200</h1> <p class="unit-price">บาท/เดือน</p>
+                </div>
+                <div class="time-package">
+                    <p class="time">500/500</p><p class="unit-time">gb/sec</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

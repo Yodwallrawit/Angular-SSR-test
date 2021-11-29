@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'DB Heavent Cond';
+  src: url('./DB Heavent Cond v3.2.woff2') format('woff2'),
+       url('./DB Heavent Cond v3.2.woff') format('woff'),
+       url('./DB Heavent Cond v3.2.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'DB Heavent Bd Cond';
+  src: url('./DB Heavent Bd Cond v3.2.woff2') format('woff2'),
+       url('./DB Heavent Bd Cond v3.2.woff') format('woff'),
+       url('./DB Heavent Bd Cond v3.2.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'DB Heavent Med Cond';
+  src: url('./DB Heavent Med Cond v3.2.woff2') format('woff2'),
+       url('./DB Heavent Med Cond v3.2.woff') format('woff'),
+       url('./DB Heavent Med Cond v3.2.ttf')  format('truetype');
+}
+

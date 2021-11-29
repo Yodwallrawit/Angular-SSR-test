@@ -1,0 +1,71 @@
+<app-navbar></app-navbar>
+<div class="home-page">
+  <app-swiper-top-page *ngIf="heroBannerImg" [swiperImg]="heroBannerImg"></app-swiper-top-page>
+  
+  <div class="home-content">
+    <div class="section-preview" *ngFor="let section of dataSections">
+      <div class="section-template" [class.bg-1]="section.header.style == '1'" [class.bg-2]="section.header.style == '2'"
+      [class.bg-3]="section.header.style == '3'" [class.bg-4]="section.header.style == '4'">
+    
+      <div class="layout-preview">
+        <h1 *ngIf="section.header.headline !== '' ">{{section.header.headline}}</h1>
+        <div class="layout-1" *ngIf="section.body.layoutid === '1'">
+          <div class="content-area">
+            <div class="head-content">{{section.body.headContent}}</div>
+            <div class="detail-content" [innerHTML]="section.body.detailContent">
+              <!-- {{section.body.detailContent}} -->
+            </div>
+          </div>
+          <div class="img-area">
+            <img [src]="section.body.imageContent" alt="">
+          </div>
+        </div>
+
+        <div class="layout-2" *ngIf="section.body.layoutid === '2'">
+          <div class="img-area">
+            <img [src]="section.body.imageContent" alt="">
+          </div>
+          <div class="content-area">
+            <div class="head-content">{{section.body.headContent}}</div>
+            <div class="detail-content" [innerHTML]="section.body.detailContent">
+              <!-- {{section.body.detailContent}} -->
+            </div>
+          </div>
+        </div>
+
+        <div class="layout-3" *ngIf="section.body.layoutid === '3'">
+          <img [src]="section.body.image" alt="">
+        </div>
+
+        <div class="layout-5" *ngIf="section.body.layoutid === '5' ">
+          <div class="grid-table-image" [class.change-grid-3-column]="section.body.image.length === 3" [class.change-grid-2-column]="section.body.image.length === 2" [class.change-grid-1-column]="section.body.image.length === 1">
+            <img *ngFor="let item of section.body.image" [src]="item.img" alt="">
+          </div>
+        </div>
+
+        <div class="layout-6" *ngIf="section.body.layoutid === '6'">
+          <div class="wrap-video-contentpage">
+            <iframe class="video-contentpage" [src]="baseURLIframe + section.body.video | safe" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="wrap-button-face-line">
+          <a [href]="detailPage?.line" target="_blank">
+            <div class="button-line-OA" [class.bg-button-change]="section.header.style == '4'" *ngIf="section.header.buttonLine === true">
+              <img src="assets/img/ic_line.png" alt="">
+              <span> สนใจสมัครบริการ <br>ติดต่อพนักงาน ผ่าน LINE</span>
+            </div>
+          </a>  
+          <a [href]="detailPage?.facebook" target="_blank">
+            <div class="button-facebook" [class.bg-button-change]="section.header.style == '4'" *ngIf="section.header.buttonFacebook === true">
+              <img src="assets/img/ic_facebook.png" alt="">
+              <span>ติดต่อพนักงาน ผ่าน Facebook</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<app-footer *ngIf="detailPage" [detailShop]="detailPage"></app-footer>
