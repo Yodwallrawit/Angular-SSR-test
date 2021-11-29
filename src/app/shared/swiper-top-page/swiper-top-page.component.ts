@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
-import { SwiperComponent, SwiperConfigInterface, SwiperDirective } from 'ngx-swiper-wrapper';
+// import { SwiperComponent, SwiperConfigInterface, SwiperDirective } from 'ngx-swiper-wrapper';
 
 @Component({
   selector: 'app-swiper-top-page',
@@ -25,29 +25,29 @@ export class SwiperTopPageComponent implements OnInit {
     }
  }
 
-  public config: SwiperConfigInterface = {
+  // public config: SwiperConfigInterface = {
 
-    direction: 'horizontal',
-    slidesPerView: 1,
-    spaceBetween: 10,
-    keyboard: false,
-    mousewheel: false,
-    scrollbar: false,
-    loop: true,
-    roundLengths: true,
+  //   direction: 'horizontal',
+  //   slidesPerView: 1,
+  //   spaceBetween: 10,
+  //   keyboard: false,
+  //   mousewheel: false,
+  //   scrollbar: false,
+  //   loop: true,
+  //   roundLengths: true,
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      type: 'bullets',
-    },    
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true,
+  //     type: 'bullets',
+  //   },    
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
 
-    breakpoints: {}
+  //   breakpoints: {}
 
-  }
+  // }
 
 }

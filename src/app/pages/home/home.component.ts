@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router ,NavigationEnd} from '@angular/router';
-import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+// import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { AisShopUserService } from 'src/app/services/ais-shop-user.service';
 import {LocationStrategy, PlatformLocation, Location} from '@angular/common';
 
@@ -23,30 +23,30 @@ export class HomeComponent implements OnInit {
   public  baseURLLine = 'http://line.me/ti/p/~' ;
   hrefTest :any
   
-  public config: SwiperConfigInterface = {
+  // public config: SwiperConfigInterface = {
 
-    direction: 'horizontal',
-    slidesPerView: 1,
-    spaceBetween: 10,
-    keyboard: false,
-    mousewheel: false,
-    scrollbar: false,
-    loop: true,
-    roundLengths: true,
+  //   direction: 'horizontal',
+  //   slidesPerView: 1,
+  //   spaceBetween: 10,
+  //   keyboard: false,
+  //   mousewheel: false,
+  //   scrollbar: false,
+  //   loop: true,
+  //   roundLengths: true,
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      type: 'bullets',
-    },    
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true,
+  //     type: 'bullets',
+  //   },    
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
 
-    breakpoints: {}
+  //   breakpoints: {}
 
-  }
+  // }
   name: any;
   shopId:any;
   pageId:any;
