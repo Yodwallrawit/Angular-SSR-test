@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
   ],
   providers: [ 
   //   {
