@@ -55,10 +55,10 @@ export class HomeComponent implements OnInit {
   
 
   constructor(private aisService : AisShopUserService,private route: ActivatedRoute,private router: Router,location:Location) {
-    // this.getPathId= location.prepareExternalUrl(location.path());
-    // if (this.getPathId !== "" || this.getPathId !== undefined) {
-    //   this.fetchDataSection(this.getPathId)
-    // }
+    this.getPathId= location.prepareExternalUrl(location.path());
+    if (this.getPathId !== "" || this.getPathId !== undefined) {
+      this.fetchDataSection(this.getPathId)
+    }
   }
 
   // ngOnInit(): void {
@@ -104,22 +104,22 @@ export class HomeComponent implements OnInit {
     //     console.log('full-path',this.href);
     // console.log('test12123');
     
-    this.route.queryParams.subscribe(data=>{
-      console.log('test',data);
-      if (data !== undefined || data !== null) {
-        this.pathTest = data.q
-        console.log('this.pathTest',this.pathTest);
-        this.fetchDataSection(this.pathTest)
-      }
-    })
+    // this.route.queryParams.subscribe(data=>{
+    //   console.log('test',data);
+    //   if (data !== undefined || data !== null) {
+    //     this.pathTest = data.q
+    //     console.log('this.pathTest',this.pathTest);
+    //     this.fetchDataSection(this.pathTest)
+    //   }
+    // })
     
 }
 
  async fetchDataSection(path:any){
    if (path) {
      console.log(path.split('/'));
-     this.branchId = path.split('/')[2];
-     this.pageId = path.split('/')[3];
+     this.branchId = path.split('/')[3];
+     this.pageId = path.split('/')[4];
       console.log('this.branchId',this.branchId);
       console.log('this.pageId',this.pageId);
       
