@@ -8,14 +8,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'SeoAndLogin';
-  href: string;
-
-  constructor(private route: ActivatedRoute,private router: Router,location:Location) { 
-
-  }
 
   ngOnInit(): void {
-    this.href = this.router.url;
-    console.log(this.router.url);
+
   }
 }
